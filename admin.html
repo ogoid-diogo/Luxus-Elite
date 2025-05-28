@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Luxus Elite</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="admin-logo">
+                <h1>Luxus <span>Admin</span></h1>
+            </div>
+
+            <nav class="admin-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fas fa-tachometer-alt"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users"></i> Perfis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user-check"></i> Verificações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-flag"></i> Denúncias
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i> Mensagens
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i> Configurações
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="admin-footer">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="header-right">
+                    <div class="admin-search">
+                        <input type="text" placeholder="Pesquisar...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="admin-notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                    </div>
+                    <div class="admin-profile">
+                        <img src="https://via.placeholder.com/40" alt="Admin">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <!-- Stats Cards -->
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon total-users">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1,245</h3>
+                            <p>Usuários</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon new-users">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>28</h3>
+                            <p>Novos hoje</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon pending">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Pendentes</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon reports">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Denúncias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="admin-activity">
+                    <div class="activity-header">
+                        <h3>Atividade Recente</h3>
+                        <a href="#" class="view-all">Ver tudo</a>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Novo usuário registrado: "Maria"</p>
+                                <small>10 minutos atrás</small>
+                            </div>
+                            <div class="activity-action">
+                                <button class="btn btn-sm btn-primary">Verificar</button>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Nova denúncia recebida</p>
+                                <small>1 hora atrás</small>
+                            </div>
+                            <div class="activity-action">
+                                <button class="btn btn-sm btn-primary">Analisar</button>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>Perfil verificado: "Sophia"</p>
+                                <small>3 horas atrás</small>
+                            </div>
+                            <div class="activity-action">
+                                <button class="btn btn-sm btn-outline">Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Approvals -->
+                <div class="admin-pending">
+                    <div class="pending-header">
+                        <h3>Perfis Pendentes</h3>
+                        <a href="#" class="view-all">Ver todos</a>
+                    </div>
+                    <div class="pending-list">
+                        <div class="pending-item">
+                            <div class="pending-profile">
+                                <img src="https://via.placeholder.com/50" alt="Perfil">
+                                <div class="pending-info">
+                                    <h4>Ana</h4>
+                                    <p>Rio de Janeiro</p>
+                                </div>
+                            </div>
+                            <div class="pending-actions">
+                                <button class="btn btn-sm btn-success">Aprovar</button>
+                                <button class="btn btn-sm btn-danger">Recusar</button>
+                            </div>
+                        </div>
+                        <div class="pending-item">
+                            <div class="pending-profile">
+                                <img src="https://via.placeholder.com/50" alt="Perfil">
+                                <div class="pending-info">
+                                    <h4>Juliana</h4>
+                                    <p>São Paulo</p>
+                                </div>
+                            </div>
+                            <div class="pending-actions">
+                                <button class="btn btn-sm btn-success">Aprovar</button>
+                                <button class="btn btn-sm btn-danger">Recusar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

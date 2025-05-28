@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Luxus Elite</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>Criar Conta</h1>
+                <p>Preencha seus dados para se cadastrar</p>
+            </div>
+
+            <form id="registrationForm" class="auth-form">
+                <!-- Step 1 - Basic Info -->
+                <div class="form-step active" data-step="1">
+                    <div class="form-group">
+                        <label for="fullName">Nome Completo</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone/WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmar Senha</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+
+                <!-- Step 2 - Profile Info -->
+                <div class="form-step" data-step="2">
+                    <div class="form-group">
+                        <label for="age">Idade</label>
+                        <input type="number" id="age" name="age" min="18" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">Estado</label>
+                        <select id="state" name="state" required>
+                            <option value="">Selecione</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <!-- outros estados -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="services">Serviços Oferecidos</label>
+                        <textarea id="services" name="services" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 3 - Photos -->
+                <div class="form-step" data-step="3">
+                    <div class="form-group">
+                        <label>Fotos do Perfil (Mínimo 3, Máximo 10)</label>
+                        <div class="photo-upload-container">
+                            <div class="photo-upload-box">
+                                <input type="file" id="photoUpload" accept="image/*" multiple style="display: none;">
+                                <label for="photoUpload" class="upload-btn">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Adicionar Fotos</span>
+                                </label>
+                            </div>
+                            <div class="photo-preview" id="photoPreview"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Descrição Pessoal</label>
+                        <textarea id="description" name="description" rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Step 4 - Verification -->
+                <div class="form-step" data-step="4">
+                    <div class="verification-step">
+                        <h3>Verificação de Identidade</h3>
+                        <p>Para garantir a segurança de todos, solicitamos uma verificação de identidade.</p>
+                        
+                        <div class="verification-options">
+                            <div class="verification-option">
+                                <input type="radio" id="verifyNow" name="verification" value="now">
+                                <label for="verifyNow">
+                                    <i class="fas fa-id-card"></i>
+                                    <span>Verificar agora</span>
+                                </label>
+                            </div>
+                            <div class="verification-option">
+                                <input type="radio" id="verifyLater" name="verification" value="later" checked>
+                                <label for="verifyLater">
+                                    <i class="far fa-clock"></i>
+                                    <span>Verificar depois</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="verification-docs" id="verificationDocs">
+                            <div class="form-group">
+                                <label>Foto do Documento (RG ou CNH)</label>
+                                <input type="file" accept="image/*">
+                            </div>
+                            <div class="form-group">
+                                <label>Selfie com Documento</label>
+                                <input type="file" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group terms-group">
+                        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                        <label for="acceptTerms">Li e aceito os <a href="termos.html">Termos de Uso</a> e <a href="privacidade.html">Política de Privacidade</a></label>
+                    </div>
+                </div>
+
+                <!-- Form Navigation -->
+                <div class="form-navigation">
+                    <button type="button" class="btn btn-outline prev-btn" disabled>Anterior</button>
+                    <button type="button" class="btn btn-primary next-btn">Próximo</button>
+                    <button type="submit" class="btn btn-primary submit-btn" style="display: none;">Finalizar Cadastro</button>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cadastro.js"></script>
+</body>
+</html>

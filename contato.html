@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Luxus Elite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+
+    <main class="contact-page">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Fale Conosco</h1>
+                <p>Entre em contato com nossa equipe de suporte</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>E-mail</h3>
+                            <p>contato@luxuselite.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telefone</h3>
+                            <p>(21) 99999-9999</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta, 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="contactName">Seu Nome</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Seu E-mail</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Assunto</label>
+                            <select id="contactSubject">
+                                <option value="">Selecione um assunto</option>
+                                <option value="support">Suporte Técnico</option>
+                                <option value="report">Denúncia</option>
+                                <option value="suggestion">Sugestão</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Mensagem</label>
+                            <textarea id="contactMessage" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactFile">Anexar Arquivo (Opcional)</label>
+                            <input type="file" id="contactFile">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>

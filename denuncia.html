@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia - Luxus Elite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+
+    <main class="report-page">
+        <div class="container">
+            <div class="report-header">
+                <h1>Denunciar Perfil</h1>
+                <p>Ajude-nos a manter a plataforma segura reportando comportamentos inadequados</p>
+            </div>
+
+            <div class="report-form">
+                <form>
+                    <div class="form-group">
+                        <label for="reportProfile">Perfil a ser denunciado</label>
+                        <input type="text" id="reportProfile" placeholder="Nome ou ID do perfil" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reportReason">Motivo da Denúncia</label>
+                        <select id="reportReason" required>
+                            <option value="">Selecione um motivo</option>
+                            <option value="fake">Perfil falso</option>
+                            <option value="photo">Foto inadequada</option>
+                            <option value="behavior">Comportamento inadequado</option>
+                            <option value="spam">Spam</option>
+                            <option value="other">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reportDetails">Detalhes da Denúncia</label>
+                        <textarea id="reportDetails" rows="5" placeholder="Descreva o que aconteceu com detalhes" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reportEvidence">Evidências (Opcional)</label>
+                        <p class="hint">Você pode anexar prints ou outras provas</p>
+                        <div class="file-upload">
+                            <input type="file" id="reportEvidence" multiple>
+                            <label for="reportEvidence" class="upload-btn">
+                                <i class="fas fa-paperclip"></i> Anexar Arquivos
+                            </label>
+                            <div class="file-preview" id="filePreview"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="reportAnonymous">
+                            <label for="reportAnonymous">Denunciar anonimamente</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Enviar Denúncia</button>
+                    </div>
+                </form>
+
+                <div class="report-info">
+                    <h3>Como funcionam as denúncias?</h3>
+                    <ul>
+                        <li>Todas as denúncias são analisadas pela nossa equipe</li>
+                        <li>Perfis denunciados podem ser suspensos ou banidos</li>
+                        <li>Seu anonimato será preservado se escolher essa opção</li>
+                        <li>Você receberá um retorno sobre sua denúncia em até 48h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>

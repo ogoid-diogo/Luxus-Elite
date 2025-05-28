@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Acompanhantes - Luxus Elite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+
+    <main class="search-page">
+        <div class="container">
+            <div class="search-header">
+                <h1>Buscar Acompanhantes</h1>
+                <p>Encontre a acompanhante ideal com nossos filtros avançados</p>
+            </div>
+
+            <div class="search-grid">
+                <!-- Filters Sidebar -->
+                <aside class="search-filters">
+                    <div class="filter-section">
+                        <h3>Filtros</h3>
+                        <button class="btn btn-outline btn-block">Limpar Filtros</button>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Localização</h4>
+                        <div class="form-group">
+                            <label for="searchCity">Cidade</label>
+                            <input type="text" id="searchCity" placeholder="Ex: Rio de Janeiro">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchState">Estado</label>
+                            <select id="searchState">
+                                <option value="">Todos</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <!-- outros estados -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Preço</h4>
+                        <div class="price-range">
+                            <div class="range-values">
+                                <span>R$ 100</span>
+                                <span>R$ 2000+</span>
+                            </div>
+                            <input type="range" min="100" max="2000" value="500" class="slider">
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Idade</h4>
+                        <div class="age-range">
+                            <div class="range-values">
+                                <span>18</span>
+                                <span>50+</span>
+                            </div>
+                            <input type="range" min="18" max="50" value="25" class="slider">
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Serviços</h4>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="service1" checked>
+                            <label for="service1">Acompanhante</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="service2">
+                            <label for="service2">Massagem</label>
+                        </div>
+                        <!-- outros serviços -->
+                    </div>
+
+                    <div class="filter-section">
+                        <h4>Status</h4>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="status1" checked>
+                            <label for="status1">Online agora</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="status2" checked>
+                            <label for="status2">Verificadas</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Results -->
+                <div class="search-results">
+                    <div class="results-header">
+                        <div class="results-count">
+                            <strong>128</strong> resultados encontrados
+                        </div>
+                        <div class="results-sort">
+                            <label for="sortBy">Ordenar por:</label>
+                            <select id="sortBy">
+                                <option value="relevance">Relevância</option>
+                                <option value="price_asc">Preço: menor primeiro</option>
+                                <option value="price_desc">Preço: maior primeiro</option>
+                                <option value="rating">Melhor avaliadas</option>
+                                <option value="newest">Mais novas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="profile-grid">
+                        <!-- Profile cards would be loaded here -->
+                        <!-- Same structure as index.html profile cards -->
+                    </div>
+
+                    <div class="pagination">
+                        <button class="btn btn-outline" disabled>
+                            <i class="fas fa-chevron-left"></i> Anterior
+                        </button>
+                        <div class="page-numbers">
+                            <span class="active">1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">10</a>
+                        </div>
+                        <button class="btn btn-outline">
+                            Próxima <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="js/busca.js"></script>
+</body>
+</html>

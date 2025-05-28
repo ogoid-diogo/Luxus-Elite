@@ -1,0 +1,71 @@
+                            <p>O Luxus Elite não intermediamos pagamentos. Todos os acordos financeiros são feitos diretamente entre os usuários. Recomendamos sempre combinar valores e formas de pagamento com antecedência.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Posso deletar minha conta? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <p>Sim, você pode deletar sua conta a qualquer momento nas configurações do perfil. Seus dados serão removidos de acordo com nossa Política de Privacidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-promo">
+                <h2>Ainda tem dúvidas?</h2>
+                <p>Nossa equipe está pronta para te ajudar</p>
+                <a href="contato.html" class="btn btn-primary">Entre em Contato</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Luxus Elite</h4>
+                    <p>O melhor site para encontrar acompanhantes premium no Brasil.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="busca.html">Buscar</a></li>
+                        <li><a href="como-funciona.html">Como Funciona</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termos.html">Termos de Uso</a></li>
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="denuncia.html">Denunciar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxus Elite. Todos os direitos reservados.</p>
+                <p>Este site é apenas para maiores de 18 anos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                question.classList.toggle('active');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>
